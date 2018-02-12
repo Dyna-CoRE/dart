@@ -1,2 +1,2 @@
 brew update > /dev/null
-brew bundle
+brew bundle --verbose

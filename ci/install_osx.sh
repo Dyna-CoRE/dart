@@ -1,6 +1,22 @@
 brew update > /dev/null
-brew bundle check
-brew bundle cleanup --force
-brew bundle check
-brew bundle --force
-brew bundle --verbose
+
+PACKAGES='
+git
+cmake
+assimp
+fcl
+bullet --with-double-precision
+ode --with-libccd --with-double-precision
+flann
+boost
+eigen
+tinyxml
+tinyxml2
+libccd
+nlopt
+ipopt
+urdfdom
+open-scene-graph
+'
+
+brew install $PACKAGES | grep -v '%$'

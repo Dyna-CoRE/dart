@@ -1,2 +1,1 @@
-brew update > /dev/null
-brew bundle
+brew install dartsim --only-dependencies
